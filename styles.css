@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+
+  background: linear-gradient(to right, rgb(83, 83, 223), rgb(142, 1, 142));
+}
+body * {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  border: solid 2px #fff;
+  width: 40%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+button,
+input {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  color: rgb(142, 1, 142);
+  font-weight: bolder;
+  border: 2px solid rgb(142, 1, 142);
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(142, 1, 142);
+  color: #fff;
+}
+input {
+  width: 82%;
+  outline: none;
+}
+#add-btn {
+  width: 80px;
+}
+li {
+  margin-left: 20px;
+  position: relative;
+  font-weight: 600;
+  font-size: small;
+  padding: 30px;
+}
+li:hover {
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+}
+#delete-btn {
+  position: absolute;
+  right: 2%;
+}
+
+.add-task {
+  margin-bottom: 30px;
+}
+.task-list p {
+  font-weight: 600;
+  font-size: small;
+}
